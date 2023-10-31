@@ -27,6 +27,7 @@ const MainSectionDesktop = () => {
 						textColor={"text-primaryWhite"}
 						padding={"py-3 px-12"}
 						weight={"font-semibold"}
+						text="Hubungi Kami"
 					/>
 				</div>
 			</div>
