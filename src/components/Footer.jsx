@@ -9,8 +9,11 @@ import {
 	BsWhatsapp,
 	BsEnvelopeFill,
 } from "react-icons/bs";
+import { useTranslation } from "react-i18next";
 
 const Footer = () => {
+	const [t] = useTranslation("global");
+
 	const sosmed = [
 		<BsTwitter size={20} color="#FFFFFF" />,
 		<BsInstagram size={20} color="#FFFFFF" />,
@@ -22,11 +25,11 @@ const Footer = () => {
 	const industri = [
 		"Hologram Shieldtag",
 		"Shielcode",
-		"Kosmetik",
-		"Obat",
+		t("industri.kosmetik"),
+		t("industri.obat"),
 		"Vape",
-		"Pakaian",
-		"Makan & Minuman",
+		t("industri.pakaian"),
+		t("industri.mnp"),
 	];
 
 	const layanan = [
@@ -36,16 +39,16 @@ const Footer = () => {
 		"Data Analytic",
 		"Distribution Tracking System",
 		"Loyality Control Program",
-		"Garansi Digital",
+		t("layanan.garansiDigital"),
 		"Forum",
 	];
 
 	const tentangKami = [
-		"Tentang Kami",
-		"Klien Kami",
+		t("navbar.tentangKami"),
+		t("tentangKami.klien"),
 		"Blog",
-		"Syarat & Kondisi",
-		"Kebijakan Privasi",
+		t("tentangKami.snk"),
+		t("tentangKami.kebijakanPrivasi"),
 	];
 
 	return (
@@ -78,9 +81,9 @@ const Footer = () => {
 							))}
 						</div>
 					</div>
-					<div className="flex gap-20 md:gap-12 md:text-sm">
+					<div className="flex gap-20 md:gap-9 md:text-sm">
 						<div className="text-primaryBlack flex flex-col gap-2">
-							<p className="font-bold">Industri</p>
+							<p className="font-bold">{t("navbar.industri")}</p>
 							{industri.map((item) => (
 								<p className="text-primaryGray hover:text-secondaryBlue cursor-pointer">
 									{item}
@@ -88,7 +91,7 @@ const Footer = () => {
 							))}
 						</div>
 						<div className="text-primaryBlack flex flex-col gap-2">
-							<p className="font-bold">Layanan</p>
+							<p className="font-bold">{t("navbar.layanan")}</p>
 							{layanan.map((item) => (
 								<p className="text-primaryGray hover:text-secondaryBlue cursor-pointer">
 									{item}

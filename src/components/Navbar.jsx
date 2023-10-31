@@ -25,7 +25,7 @@ const Navbar = () => {
 		"Data Analytic",
 		"Distribution Tracking System",
 		"Loyalty Control Program",
-		t("layanan.generasiDigital"),
+		t("layanan.garansiDigital"),
 	];
 
 	const industri = [

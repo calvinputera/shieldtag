@@ -9,17 +9,23 @@
   },
   "button": {
     "hubungiKami": "Contact Us",
-    "jadwalDemo": "Schedule a demo"
+    "jadwalDemo": "Schedule a Demo"
   },
   "layanan": {
-    "generasiDigital": "Digital Generation"
+    "garansiDigital": "Digital Warranty"
   },
   "industri": {
     "khc": "Cosmetics and Home Care",
-    "farmasi": "Pharmacy"
+    "farmasi": "Pharmacy",
+    "kosmetik": "Cosmetics",
+    "obat": "Medicine",
+    "pakaian": "Clothing",
+    "mnp": "Food and Drink"
   },
   "tentangKami": {
-    "klien": "Clients"
+    "klien": "Clients",
+    "snk": "Terms and Conditions",
+    "kebijakanPrivasi": "Privacy Policy"
   },
   "mainPragraph": {
     "paragraph": "Keep your products authentic with high-tech hologram stickers."
@@ -35,5 +41,22 @@
     "paragraphOne": "In the manufacturing business, we create a product for us to sell to the public, both selling online, agents, resellers, and various other ways. However, we do not know where our products have been sold in the market. We only know the sales figures but it is almost impossible to know where the product has been sold.",
     "paragraphTwo": "Shieldtag makes it from impossible to easy. Through each technologically sound hologram sticker from Shieldtag, you can track the distribution of your products in the market. These items can be tracked accurately and actually, as well as all data presented in real-time.",
     "pelajariDistribution": "Learn about Distribution Tracking System"
+  },
+  "qna": {
+    "title": "Frequently Asked Questions",
+    "questionOneTitle": "What is Shieldtag?",
+    "questionOne": "Shieldtag is a technological hologram sticker used to ensure the authenticity of a product.",
+    "questionTwoTitle": "How to use it?",
+    "questionTwo": "Download the Shieldtag app, then scan the QR code of the Shieldtag hologram, then enter the unique PIN code in your QR code, and confirm the authenticity of your product.",
+    "questionThreeTitle": "What brands are already using Shieldtag?",
+    "questionThree": "Azarine, Dr. Soap, Zoya, ProShop are some of the well-known brands that have used Shieldtag.",
+    "questionFourTitle": "Where is Shieldtag a company from?",
+    "questionFour": "We are from Jakarta, Indonesia, and operating under the name PT Karya Generasi Biru and has been operating since 2020.",
+    "questionFiveTitle": "How do I get the Shieldtag app?",
+    "questionFive": "You can download the Shieldtag app which is available on Google Play and App Store."
+  },
+  "dashboardSection": {
+    "paragraph": "Interested in our technology?",
+    "title": "Let's take a look at the Shieldtag Dashboard"
   }
 }

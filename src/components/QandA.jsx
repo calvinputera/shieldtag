@@ -1,31 +1,29 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 const QandA = () => {
+	const [t] = useTranslation("global");
+
 	const questions = [
 		{
-			question: "Apa itu Shieldtag?",
-			answer:
-				"Shieldtag adalah hologram sticker berteknologi yang digunakan untuk memastikan keaslian sebuah produk.",
+			question: t("qna.questionOneTitle"),
+			answer: t("qna.questionOne"),
 		},
 		{
-			question: "Bagaimana cara penggunaannya?",
-			answer:
-				"Download aplikasi Shieldtag, lalu scan QR code dari hologram Shieldtag, lalu masukan PIN code yang unik di QR code kamu, dan pastikan keaslian produk kamu.",
+			question: t("qna.questionTwoTitle"),
+			answer: t("qna.questionTwo"),
 		},
 		{
-			question: "Brand apa aja yg sudah menggunakan Shieldtag?",
-			answer:
-				"Azarine, Dr. Soap, Zoya, ProShop adalah salah satu dari brand-brand ternama yang telah menggunakan Shieldtag.",
+			question: t("qna.questionThreeTitle"),
+			answer: t("qna.questionThree"),
 		},
 		{
-			question: "Shieldtag adalah perusahaan yang berasal darimana?",
-			answer:
-				"Kami berasal dari Jakarta, Indonesia, dan beroperasi atas nama PT Karya Generasi Biru dan telah beroperasi dari tahun 2020.",
+			question: t("qna.questionFourTitle"),
+			answer: t("qna.questionFour"),
 		},
 		{
-			question: "Bagaimana cara mendapatkan aplikasi Shieldtag?",
-			answer:
-				"Anda dapat download aplikasi Shieldtag yang tersedia di Google Play maupun App Store.",
+			question: t("qna.questionFiveTitle"),
+			answer: t("qna.questionFive"),
 		},
 	];
 
@@ -33,7 +31,7 @@ const QandA = () => {
 		<div className="p-8 md:px-14 flex flex-col gap-16">
 			<div className="flex flex-col justify-center gap-4 text-primaryBlack">
 				<h1 className="font-nunito text-3xl font-extrabold text-center">
-					Pertanyaan Yang Sering Diajukan
+					{t("qna.title")}
 				</h1>
 				<hr className="border border-secondaryBlue w-20 mx-auto" />
 			</div>

@@ -19,7 +19,7 @@ const SupplySection = () => {
 					<p>{t("supplySection.paragraphOne")}</p>
 					<p>{t("supplySection.paragraphTwo")}</p>
 				</div>
-				<p className="flex items-start md:items-center md:gap-2 text-primaryBlue font-bold mt-3 w-[70%]">
+				<p className="flex items-start md:items-center md:gap-2 text-primaryBlue font-bold mt-3 w-[70%] cursor-pointer">
 					{t("supplySection.pelajariDistribution")}
 					<span>
 						<BsArrowRightShort size={25} />

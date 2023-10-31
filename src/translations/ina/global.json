@@ -12,20 +12,26 @@
     "jadwalDemo": "Jadwalkan Demo"
   },
   "layanan": {
-    "generasiDigital": "Generasi Digital"
+    "garansiDigital": "Garansi Digital"
   },
   "industri": {
     "khc": "Kosmetik dan Perawatan Rumah",
-    "farmasi": "Farmasi"
+    "farmasi": "Farmasi",
+    "kosmetik": "Kosmetik",
+    "obat": "Obat",
+    "pakaian": "Pakaian",
+    "mnp": "Makanan dan Minuman"
   },
   "tentangKami": {
-    "klien": "Klien Kami"
+    "klien": "Klien Kami",
+    "snk": "Syarat dan Kondisi",
+    "kebijakanPrivasi": "Kebijakan Privasi"
   },
   "mainPragraph": {
     "paragraph": "Jaga keaslian produk kamu dengan stiker hologram berteknologi tinggi."
   },
   "sectionProtection": {
-    "fiturKeamanan": "Fitur keamanan",
+    "fiturKeamanan": "Fitur Keamanan",
     "paragraphOne": "Shieldtag adalah hologram sticker berteknologi yang digunakan untuk memastikan sebuah keaslian produk. Kamu bisa menggunakan aplikasi yang sudah Shieldtag sediakan untuk memastikan keaslian produk yang kamu beli.",
     "paragraphTwo": "Ada dua cara untuk mengecek keaslian produk dengan aplikasi Shieldtag. Pastinya gampang dan mudah banget. Yuk cari tahu di bawah ini bagaimana cara menggunakan aplikasi Shieldtag, untuk mengetahui keaslian produk kamu!",
     "pelajariSelengkapnya": "Pelajari Selengkapnya"
@@ -35,5 +41,22 @@
     "paragraphOne": "Di dalam bisnis manufaktur, kita menciptakan suatu produk untuk kita jual kepada masyarakat, baik jual secara online, agent, reseller, dan berbagai cara lainnya. Namun, kita tidak tau dimana produk kita telah terjual di pasar. Kita hanya tau angka penjualan tapi hampir tidak mungkin untuk mengetahui dimana produk itu telah terjual.",
     "paragraphTwo": "Shieldtag membuat hal tersebut dari tidak mungkin menjadi bisa dan mudah. Melalui setiap sticker hologram berteknologi dari Shieldtag, anda dapat melacak pendistribusian produk anda di pasar. Barang-barang tersebut dapat di lacak dengan akurat dan aktual juga semua data yang tersaji secara real-time.",
     "pelajariDistribution": "Pelajari Distribution Tracking System"
+  },
+  "qna": {
+    "title": "Pertanyaan Yang Sering Diajukan",
+    "questionOneTitle": "Apa itu Shieldtag?",
+    "questionOne": "Shieldtag adalah hologram sticker berteknologi yang digunakan untuk memastikan keaslian sebuah produk.",
+    "questionTwoTitle": "Bagaimana cara penggunaannya?",
+    "questionTwo": "Download aplikasi Shieldtag, lalu scan QR code dari hologram Shieldtag, lalu masukan PIN code yang unik di QR code kamu, dan pastikan keaslian produk kamu.",
+    "questionThreeTitle": "Brand apa aja yg sudah menggunakan Shieldtag?",
+    "questionThree": "Azarine, Dr. Soap, Zoya, ProShop adalah salah satu dari brand-brand ternama yang telah menggunakan Shieldtag.",
+    "questionFourTitle": "Shieldtag adalah perusahaan yang berasal darimana?",
+    "questionFour": "Kami berasal dari Jakarta, Indonesia, dan beroperasi atas nama PT Karya Generasi Biru dan telah beroperasi dari tahun 2020.",
+    "questionFiveTitle": "Bagaimana cara mendapatkan aplikasi Shieldtag?",
+    "questionFive": "Anda dapat download aplikasi Shieldtag yang tersedia di Google Play maupun App Store."
+  },
+  "dashboardSection": {
+    "paragraph": "Tertarik dengan teknologi kami?",
+    "title": "Mari kita melihat Dashboard Shieldtag"
   }
 }

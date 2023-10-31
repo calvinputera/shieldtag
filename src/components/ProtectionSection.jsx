@@ -19,7 +19,7 @@ const ProtectionSection = () => {
 					<p>{t("sectionProtection.paragraphOne")}</p>
 					<p>{t("sectionProtection.paragraphTwo")}</p>
 				</div>
-				<p className="flex items-center gap-2 text-primaryBlue font-bold mt-3">
+				<p className="flex items-center gap-2 text-primaryBlue font-bold mt-3 cursor-pointer">
 					{t("sectionProtection.pelajariSelengkapnya")}
 					<span>
 						<BsArrowRightShort size={25} />
