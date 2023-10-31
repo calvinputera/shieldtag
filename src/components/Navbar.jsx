@@ -20,7 +20,7 @@ const Navbar = () => {
 		"GPRS",
 		"Authenticator",
 		"Data Analytic",
-		"Dsitribution Tracking System",
+		"Distribution Tracking System",
 		"Loyalty Control Program",
 		"Generasi Digital",
 	];
@@ -37,9 +37,145 @@ const Navbar = () => {
 
 	return (
 		<div className="bg-primaryWhite shadow-md relative font-nunito text-primaryBlack">
-			<div className="p-4 flex justify-between items-center">
+			<div className="p-4 md:px-14 flex justify-between items-center">
 				<img src={logo} alt="shieldtag logo" className="w-36" />
 				<div className="flex gap-8">
+					{/* Desktop */}
+					<div className="hidden md:flex md:items-center md:gap-6 md:text-sm md:font-semibold">
+						<p className="cursor-pointer hover:underline hover:underline-offset-[12px] hover:decoration-primaryBlue hover:decoration-2">
+							Home
+						</p>
+						<p className="cursor-pointer hover:underline hover:underline-offset-[12px] hover:decoration-primaryBlue hover:decoration-2">
+							Kenapa Shieldtag?
+						</p>
+						<div className="relative">
+							<p
+								className={`flex items-center justify-between gap-3 cursor-pointer hover:underline hover:underline-offset-[12px] hover:decoration-primaryBlue hover:decoration-2 ${
+									isActiveProduk &&
+									"text-secondaryBlue underline decoration-2 underline-offset-[12px] hover:decoration-secondaryBlue"
+								}`}
+								onClick={() => {
+									setIsActiveProduk(!isActiveProduk);
+									setIsActiveIndustri(false);
+									setIsActiveLayanan(false);
+									setIsActiveTentangKami(false);
+								}}
+							>
+								Produk{" "}
+								<span>
+									<BsChevronDown size={15} />
+								</span>
+							</p>
+							{isActiveProduk && (
+								<div className="absolute z-20 p-4 w-64 left-0 top-11 shadow-lg rounded-md bg-primaryWhite flex justify-between gap-2">
+									{produk.map((menu) => (
+										<p className="hover:text-secondaryBlue cursor-pointer">
+											{menu}
+										</p>
+									))}
+								</div>
+							)}
+						</div>
+						<div className="relative">
+							<p
+								className={`flex items-center justify-between gap-3 cursor-pointer hover:underline hover:underline-offset-[12px] hover:decoration-primaryBlue hover:decoration-2 ${
+									isActiveLayanan &&
+									"text-secondaryBlue underline decoration-2 underline-offset-[12px] hover:decoration-secondaryBlue"
+								}`}
+								onClick={() => {
+									setIsActiveLayanan(!isActiveLayanan);
+									setIsActiveProduk(false);
+									setIsActiveIndustri(false);
+									setIsActiveTentangKami(false);
+								}}
+							>
+								Layanan{" "}
+								<span>
+									<BsChevronDown size={15} />
+								</span>
+							</p>
+							{isActiveLayanan && (
+								<div className="absolute z-20 p-4 w-[470px] h-[290px] left-0 top-11 shadow-lg rounded-md bg-primaryWhite flex items-center justify-between gap-2">
+									<div className="flex flex-col gap-4 p-3">
+										{layanan.map((menu) => (
+											<p className="hover:text-secondaryBlue cursor-pointer">
+												{menu}
+											</p>
+										))}
+									</div>
+									<div className="flex flex-col gap-4 p-3">
+										{layanan.map((menu) => (
+											<p className="hover:text-secondaryBlue cursor-pointer">
+												{menu}
+											</p>
+										))}
+									</div>
+								</div>
+							)}
+						</div>
+						<div className="relative">
+							<p
+								className={`flex items-center justify-between gap-3 cursor-pointer hover:underline hover:underline-offset-[12px] hover:decoration-primaryBlue hover:decoration-2 ${
+									isActiveIndustri &&
+									"text-secondaryBlue underline decoration-2 underline-offset-[12px] hover:decoration-secondaryBlue"
+								}`}
+								onClick={() => {
+									setIsActiveIndustri(!isActiveIndustri);
+									setIsActiveProduk(false);
+									setIsActiveLayanan(false);
+									setIsActiveTentangKami(false);
+								}}
+							>
+								Industri{" "}
+								<span>
+									<BsChevronDown size={15} />
+								</span>
+							</p>
+							{isActiveIndustri && (
+								<div className="absolute z-20 p-4 w-64 h-44 left-0 top-11 shadow-lg rounded-md bg-primaryWhite flex flex-col justify-center gap-3">
+									{industri.map((menu) => (
+										<p className="hover:text-secondaryBlue cursor-pointer">
+											{menu}
+										</p>
+									))}
+								</div>
+							)}
+						</div>
+						<div className="relative">
+							<p
+								className={`flex items-center justify-between gap-3 cursor-pointer hover:underline hover:underline-offset-[12px] hover:decoration-primaryBlue hover:decoration-2 ${
+									isActiveTentangKami &&
+									"text-secondaryBlue underline decoration-2 underline-offset-[12px] hover:decoration-secondaryBlue"
+								}`}
+								onClick={() => {
+									setIsActiveTentangKami(!isActiveTentangKami);
+									setIsActiveProduk(false);
+									setIsActiveIndustri(false);
+									setIsActiveLayanan(false);
+								}}
+							>
+								Tentang Kami{" "}
+								<span>
+									<BsChevronDown size={15} />
+								</span>
+							</p>
+							{isActiveTentangKami && (
+								<div className="absolute z-20 p-4 w-44 h-36 left-0 top-11 shadow-lg rounded-md bg-primaryWhite flex flex-col justify-center gap-3">
+									{tentangKami.map((menu) => (
+										<p className="hover:text-secondaryBlue cursor-pointer">
+											{menu}
+										</p>
+									))}
+								</div>
+							)}
+						</div>
+						<Button
+							bgColor={"bg-gradient-to-r from-secondaryBlue to-primaryBlue"}
+							textColor={"text-primaryWhite"}
+							padding={"py-3 px-12"}
+							weight={"font-semibold"}
+						/>
+					</div>
 					<div
 						className="relative flex gap-4 items-center cursor-pointer"
 						onClick={() => setChangeLanguages(!changeLanguages)}
@@ -47,38 +183,40 @@ const Navbar = () => {
 						<img src={languages} alt="ina" className="w-8" />
 						<BsChevronDown size={15} />
 						{changeLanguages && (
-							<div className="absolute bg-primaryWhite top-9 right-0 shadow-lg w-20 flex flex-col rounded-md z-20">
+							<div className="absolute p-2 bg-primaryWhite top-14 left-0 shadow-lg w-28 flex rounded-md z-20">
 								<div
-									className="w-full flex justify-center cursor-pointer hover:bg-blueHover hover:rounded-t-md"
+									className="w-full flex justify-center cursor-pointer hover:bg-blueHover hover:rounded-md"
 									onClick={() => {
 										setLanguages(ina);
 										setChangeLanguages(false);
 									}}
 								>
-									<img src={ina} alt="ina" className="w-10" />
+									<img src={ina} alt="ina" className="w-8" />
 								</div>
 								<div
-									className="w-full flex justify-center cursor-pointer hover:bg-blueHover hover:rounded-b-md"
+									className="w-full flex justify-center cursor-pointer hover:bg-blueHover hover:rounded-md"
 									onClick={() => {
 										setLanguages(usa);
 										setChangeLanguages(false);
 									}}
 								>
-									<img src={usa} alt="usa" className="w-9" />
+									<img src={usa} alt="usa" className="w-7" />
 								</div>
 							</div>
 						)}
 					</div>
 					<BsList
-						className="cursor-pointer"
+						className="cursor-pointer md:hidden"
 						size={25}
 						color="#3450a2"
 						onClick={() => setIsOpenMenu(!isOpenMenu)}
 					/>
 				</div>
 			</div>
+
+			{/* Mobile */}
 			{isOpenMenu && (
-				<div className="flex flex-col gap-4 py-4 px-5 absolute bg-primaryWhite w-full shadow-md max-h-80 overflow-y-scroll no-scrollbar top-14">
+				<div className="flex flex-col gap-4 py-4 px-5 absolute bg-primaryWhite w-full shadow-md max-h-80 overflow-y-scroll no-scrollbar top-14 z-10">
 					<p className="cursor-pointer hover:underline hover:underline-offset-[12px] hover:decoration-primaryBlue hover:decoration-2">
 						Home
 					</p>
@@ -103,7 +241,7 @@ const Navbar = () => {
 						</span>
 					</p>
 					{isActiveProduk && (
-						<div className="flex flex-col gap-2">
+						<div className="ml-4 flex flex-col gap-2">
 							{produk.map((menu) => (
 								<p className="hover:text-secondaryBlue cursor-pointer">
 									{menu}
@@ -129,13 +267,22 @@ const Navbar = () => {
 						</span>
 					</p>
 					{isActiveLayanan && (
-						<div className="flex flex-col gap-2">
-							{layanan.map((menu) => (
-								<p className="hover:text-secondaryBlue cursor-pointer">
-									{menu}
-								</p>
-							))}
-						</div>
+						<>
+							<div className="ml-4 flex flex-col gap-2">
+								{layanan.map((menu) => (
+									<p className="hover:text-secondaryBlue cursor-pointer">
+										{menu}
+									</p>
+								))}
+							</div>
+							<div className="ml-4 -mt-2 flex flex-col gap-2">
+								{layanan.map((menu) => (
+									<p className="hover:text-secondaryBlue cursor-pointer">
+										{menu}
+									</p>
+								))}
+							</div>
+						</>
 					)}
 					<p
 						className={`flex items-center justify-between w-32 cursor-pointer hover:underline hover:underline-offset-[12px] hover:decoration-primaryBlue hover:decoration-2 ${
@@ -155,7 +302,7 @@ const Navbar = () => {
 						</span>
 					</p>
 					{isActiveIndustri && (
-						<div className="flex flex-col gap-2">
+						<div className="ml-4 flex flex-col gap-2">
 							{industri.map((menu) => (
 								<p className="hover:text-secondaryBlue cursor-pointer">
 									{menu}
@@ -181,7 +328,7 @@ const Navbar = () => {
 						</span>
 					</p>
 					{isActiveTentangKami && (
-						<div className="flex flex-col gap-2">
+						<div className="ml-4 flex flex-col gap-2">
 							{tentangKami.map((menu) => (
 								<p className="hover:text-secondaryBlue cursor-pointer">
 									{menu}
