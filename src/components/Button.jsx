@@ -1,11 +1,11 @@
 import React from "react";
 
-const Button = ({ bgColor, textColor, padding, weight }) => {
+const Button = ({ bgColor, textColor, padding, weight, text }) => {
 	return (
 		<button
 			className={`${bgColor} ${textColor} ${padding} rounded-md text-center text-sm font-nunito ${weight}`}
 		>
-			Hubungi Kami
+			{text}
 		</button>
 	);
 };
