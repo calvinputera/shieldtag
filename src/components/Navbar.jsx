@@ -4,8 +4,11 @@ import logo from "../assets/logo.png";
 import ina from "../assets/indonesia.png";
 import usa from "../assets/usa.png";
 import { BsChevronDown, BsList } from "react-icons/bs";
+import { useTranslation } from "react-i18next";
 
 const Navbar = () => {
+	const [t, i18n] = useTranslation("global");
+
 	const [isOpenMenu, setIsOpenMenu] = useState(false);
 	const [isActiveProduk, setIsActiveProduk] = useState(false);
 	const [isActiveLayanan, setIsActiveLayanan] = useState(false);
@@ -22,18 +25,27 @@ const Navbar = () => {
 		"Data Analytic",
 		"Distribution Tracking System",
 		"Loyalty Control Program",
-		"Generasi Digital",
+		t("layanan.generasiDigital"),
 	];
 
 	const industri = [
-		"Kosmetik dan Perawatan Rumah",
-		"Farmasi",
+		t("industri.khc"),
+		t("industri.farmasi"),
 		"Vape/Liquid",
 		"Fashion",
 		"F&B",
 	];
 
-	const tentangKami = ["Tentang Kami", "Klien Kami", "Hubungi Kami", "Blog"];
+	const tentangKami = [
+		t("navbar.tentangKami"),
+		t("tentangKami.klien"),
+		t("button.hubungiKami"),
+		"Blog",
+	];
+
+	const handleLanguanges = (lang) => {
+		i18n.changeLanguage(lang);
+	};
 
 	return (
 		<div className="bg-primaryWhite shadow-md relative font-nunito text-primaryBlack">
@@ -43,10 +55,10 @@ const Navbar = () => {
 					{/* Desktop */}
 					<div className="hidden md:flex md:items-center md:gap-6 md:text-sm md:font-semibold">
 						<p className="cursor-pointer hover:underline hover:underline-offset-[12px] hover:decoration-primaryBlue hover:decoration-2">
-							Home
+							{t("navbar.beranda")}
 						</p>
 						<p className="cursor-pointer hover:underline hover:underline-offset-[12px] hover:decoration-primaryBlue hover:decoration-2">
-							Kenapa Shieldtag?
+							{t("navbar.kenapaShieldtag")}
 						</p>
 						<div className="relative">
 							<p
@@ -61,7 +73,7 @@ const Navbar = () => {
 									setIsActiveTentangKami(false);
 								}}
 							>
-								Produk{" "}
+								{t("navbar.produk")}
 								<span>
 									<BsChevronDown size={15} />
 								</span>
@@ -89,7 +101,7 @@ const Navbar = () => {
 									setIsActiveTentangKami(false);
 								}}
 							>
-								Layanan{" "}
+								{t("navbar.layanan")}
 								<span>
 									<BsChevronDown size={15} />
 								</span>
@@ -126,7 +138,7 @@ const Navbar = () => {
 									setIsActiveTentangKami(false);
 								}}
 							>
-								Industri{" "}
+								{t("navbar.industri")}
 								<span>
 									<BsChevronDown size={15} />
 								</span>
@@ -154,7 +166,7 @@ const Navbar = () => {
 									setIsActiveLayanan(false);
 								}}
 							>
-								Tentang Kami{" "}
+								{t("navbar.tentangKami")}
 								<span>
 									<BsChevronDown size={15} />
 								</span>
@@ -174,7 +186,7 @@ const Navbar = () => {
 							textColor={"text-primaryWhite"}
 							padding={"py-3 px-12"}
 							weight={"font-semibold"}
-							text="Hubungi Kami"
+							text={t("button.hubungiKami")}
 						/>
 					</div>
 					<div
@@ -188,6 +200,7 @@ const Navbar = () => {
 								<div
 									className="w-full flex justify-center cursor-pointer hover:bg-blueHover hover:rounded-md"
 									onClick={() => {
+										handleLanguanges("ina");
 										setLanguages(ina);
 										setChangeLanguages(false);
 									}}
@@ -197,6 +210,7 @@ const Navbar = () => {
 								<div
 									className="w-full flex justify-center cursor-pointer hover:bg-blueHover hover:rounded-md"
 									onClick={() => {
+										handleLanguanges("en");
 										setLanguages(usa);
 										setChangeLanguages(false);
 									}}
@@ -219,10 +233,10 @@ const Navbar = () => {
 			{isOpenMenu && (
 				<div className="flex flex-col gap-4 py-4 px-5 absolute bg-primaryWhite w-full shadow-md max-h-80 overflow-y-scroll no-scrollbar top-14 z-10">
 					<p className="cursor-pointer hover:underline hover:underline-offset-[12px] hover:decoration-primaryBlue hover:decoration-2">
-						Home
+						{t("navbar.beranda")}
 					</p>
 					<p className="cursor-pointer hover:underline hover:underline-offset-[12px] hover:decoration-primaryBlue hover:decoration-2">
-						Kenapa Shieldtag?
+						{t("navbar.kenapaShieldtag")}
 					</p>
 					<p
 						className={`flex items-center justify-between w-32 cursor-pointer hover:underline hover:underline-offset-[12px] hover:decoration-primaryBlue hover:decoration-2 ${
@@ -236,7 +250,7 @@ const Navbar = () => {
 							setIsActiveTentangKami(false);
 						}}
 					>
-						Produk{" "}
+						{t("navbar.produk")}
 						<span>
 							<BsChevronDown size={15} />
 						</span>
@@ -262,7 +276,7 @@ const Navbar = () => {
 							setIsActiveTentangKami(false);
 						}}
 					>
-						Layanan{" "}
+						{t("navbar.layanan")}
 						<span>
 							<BsChevronDown size={15} />
 						</span>
@@ -297,7 +311,7 @@ const Navbar = () => {
 							setIsActiveTentangKami(false);
 						}}
 					>
-						Industri{" "}
+						{t("navbar.industri")}
 						<span>
 							<BsChevronDown size={15} />
 						</span>
@@ -323,7 +337,7 @@ const Navbar = () => {
 							setIsActiveLayanan(false);
 						}}
 					>
-						Tentang Kami{" "}
+						{t("navbar.tentangKami")}
 						<span>
 							<BsChevronDown size={15} />
 						</span>
@@ -342,7 +356,7 @@ const Navbar = () => {
 						textColor={"text-primaryWhite"}
 						padding={"py-3 px-12"}
 						weight={"font-semibold"}
-						text="Hubungi Kami"
+						text={t("button.hubungiKami")}
 					/>
 				</div>
 			)}

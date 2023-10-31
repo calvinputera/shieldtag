@@ -5,8 +5,11 @@ import scan from "../assets/scan.png";
 import check from "../assets/check.png";
 import verified from "../assets/verified.png";
 import Button from "./Button";
+import { useTranslation } from "react-i18next";
 
 const MainSectionMobile = () => {
+	const [t] = useTranslation("global");
+
 	return (
 		<div className="w-full bg-gradient-to-tr from-blueHover via-primaryWhite to-blueHover md:hidden">
 			<div className="relative md:w-1/2">
@@ -34,9 +37,8 @@ const MainSectionMobile = () => {
 				</h1>
 				<div className="flex items-start">
 					<img src={verified} alt="verified" className="w-10 -ml-2" />
-					<p className="text-primaryBlack font-nunito md:w-[70%]">
-						Jaga keaslian produk kamu dengan stiker hologram berteknologi
-						tinggi.
+					<p className="text-primaryBlack font-nunito w-[80%] md:w-[70%]">
+						{t("mainPragraph.paragraph")}
 					</p>
 				</div>
 				<div className="mt-7">
@@ -45,7 +47,7 @@ const MainSectionMobile = () => {
 						textColor={"text-primaryWhite"}
 						padding={"py-3 px-12"}
 						weight={"font-semibold"}
-						text="Hubungi Kami"
+						text={t("button.hubungiKami")}
 					/>
 				</div>
 			</div>

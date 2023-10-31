@@ -1,0 +1,39 @@
+{
+  "navbar": {
+    "beranda": "Beranda",
+    "kenapaShieldtag" :"Kenapa Shieldtag?",
+    "produk": "Produk",
+    "layanan": "Layanan",
+    "industri": "Industri",
+    "tentangKami": "Tentang Kami"
+  },
+  "button": {
+    "hubungiKami": "Hubungi Kami",
+    "jadwalDemo": "Jadwalkan Demo"
+  },
+  "layanan": {
+    "generasiDigital": "Generasi Digital"
+  },
+  "industri": {
+    "khc": "Kosmetik dan Perawatan Rumah",
+    "farmasi": "Farmasi"
+  },
+  "tentangKami": {
+    "klien": "Klien Kami"
+  },
+  "mainPragraph": {
+    "paragraph": "Jaga keaslian produk kamu dengan stiker hologram berteknologi tinggi."
+  },
+  "sectionProtection": {
+    "fiturKeamanan": "Fitur keamanan",
+    "paragraphOne": "Shieldtag adalah hologram sticker berteknologi yang digunakan untuk memastikan sebuah keaslian produk. Kamu bisa menggunakan aplikasi yang sudah Shieldtag sediakan untuk memastikan keaslian produk yang kamu beli.",
+    "paragraphTwo": "Ada dua cara untuk mengecek keaslian produk dengan aplikasi Shieldtag. Pastinya gampang dan mudah banget. Yuk cari tahu di bawah ini bagaimana cara menggunakan aplikasi Shieldtag, untuk mengetahui keaslian produk kamu!",
+    "pelajariSelengkapnya": "Pelajari Selengkapnya"
+  },
+  "supplySection": {
+    "dataProduk": "Data Produk",
+    "paragraphOne": "Di dalam bisnis manufaktur, kita menciptakan suatu produk untuk kita jual kepada masyarakat, baik jual secara online, agent, reseller, dan berbagai cara lainnya. Namun, kita tidak tau dimana produk kita telah terjual di pasar. Kita hanya tau angka penjualan tapi hampir tidak mungkin untuk mengetahui dimana produk itu telah terjual.",
+    "paragraphTwo": "Shieldtag membuat hal tersebut dari tidak mungkin menjadi bisa dan mudah. Melalui setiap sticker hologram berteknologi dari Shieldtag, anda dapat melacak pendistribusian produk anda di pasar. Barang-barang tersebut dapat di lacak dengan akurat dan aktual juga semua data yang tersaji secara real-time.",
+    "pelajariDistribution": "Pelajari Distribution Tracking System"
+  }
+}

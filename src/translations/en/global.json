@@ -1,0 +1,39 @@
+{
+  "navbar": {
+    "beranda": "Home",
+    "kenapaShieldtag" :"Why Shieldtag?",
+    "produk": "Product",
+    "layanan": "Services",
+    "industri": "Industry",
+    "tentangKami": "About Us"
+  },
+  "button": {
+    "hubungiKami": "Contact Us",
+    "jadwalDemo": "Schedule a demo"
+  },
+  "layanan": {
+    "generasiDigital": "Digital Generation"
+  },
+  "industri": {
+    "khc": "Cosmetics and Home Care",
+    "farmasi": "Pharmacy"
+  },
+  "tentangKami": {
+    "klien": "Clients"
+  },
+  "mainPragraph": {
+    "paragraph": "Keep your products authentic with high-tech hologram stickers."
+  },
+  "sectionProtection": {
+    "fiturKeamanan": "Security Features",
+    "paragraphOne": "Shieldtag is a hologram sticker with technology used to ensure the authenticity of a product. You can use the application that Shieldtag has provided to ensure the authenticity of the products you buy.",
+    "paragraphTwo": "There are two ways to check the authenticity of a product with the Shieldtag app. Of course, it's easy and very easy. Let's find out below how to use the Shieldtag application, to find out the authenticity of your product!",
+    "pelajariSelengkapnya": "Learn More"
+  },
+  "supplySection": {
+    "dataProduk": "Product Data",
+    "paragraphOne": "In the manufacturing business, we create a product for us to sell to the public, both selling online, agents, resellers, and various other ways. However, we do not know where our products have been sold in the market. We only know the sales figures but it is almost impossible to know where the product has been sold.",
+    "paragraphTwo": "Shieldtag makes it from impossible to easy. Through each technologically sound hologram sticker from Shieldtag, you can track the distribution of your products in the market. These items can be tracked accurately and actually, as well as all data presented in real-time.",
+    "pelajariDistribution": "Learn about Distribution Tracking System"
+  }
+}
